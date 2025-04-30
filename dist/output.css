@@ -561,6 +561,10 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.pointer-events-none {
+  pointer-events: none;
+}
+
 .fixed {
   position: fixed;
 }
@@ -614,6 +618,10 @@ video {
 
 .z-0 {
   z-index: 0;
+}
+
+.z-\[9999\] {
+  z-index: 9999;
 }
 
 .z-50 {
@@ -733,6 +741,10 @@ video {
   height: 100%;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .h-auto {
   height: auto;
 }
@@ -755,6 +767,10 @@ video {
 
 .w-0 {
   width: 0px;
+}
+
+.w-8 {
+  width: 2rem;
 }
 
 .w-\[90\%\] {
@@ -1252,20 +1268,6 @@ body {
   max-height: 80vh;
   /* Agar tinggi modal mengikuti ukuran layar */
   overflow-y: auto;
-}
-
-.tracker {
-  position: fixed;
-  transform: translate(-50%, -50%);
-  width: 40px;
-  z-index: 9999;
-  pointer-events: none;
-  transition: all .15s;
-}
-
-.glow-cursor {
-  transform: translate(-50%, -50%);
-  filter: drop-shadow(0 0 6px #ffcff1) drop-shadow(0 0 10px #ffcff1);
 }
 
 @keyframes shimmer {
