@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html class="scroll-smooth">
 <head>
-    <title>Quelita Cake</title>
+    <title>Birthday Nay</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="dist/output.css" rel="stylesheet">
-  <link rel="icon" href="dist/img/logo1.png">
+  <link rel="icon" href="dist/img/icon1.png">
 
   <!--AOS-->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -13,14 +13,14 @@
   <!--Owl Carousel-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
 </head>
 <body>
-    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"> 
+    <header id="header" class="bg-transparent w-full flex items-center z-10"> 
         <div class="container">
             <div class="flex items-center justify-between relative">
                 <div class="px-4">
-                    <a href="#hero" class="block font-extrabold text-brown text-xl lg:text-2xl py-6">Quelita Cake</a>
+                    <a href="#hero" class="block font-extrabold text-primary text-xl lg:text-2xl py-6">Nay's</a>
                 </div>
                 <div class="px-4 flex items-center">
                     <button id="hamburger" name="hamburger" class="block absolute right-4 lg:hidden" type="button">
@@ -28,48 +28,71 @@
                         <span class="hamburger-line transition duration-300 ease-in-out"></span>
                         <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
                     </button>
-
+    
                     <nav id="nav-menu" class="hidden lg:block absolute py-5 shadow-lg bg-white rounded-lg max-w-[250px] w-full right-4 top-full lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none lg:static">
                         <ul class="block lg:flex">
                             <li class="group">
-                                <a href="#hero" class="lg:text-lg text-md flex py-2 mx-8 text-dark font-semibold group-hover:text-brown">Home</a>
+                                <a href="#hero" class="relative inline-block lg:text-lg text-md mx-6 py-2 px-4 text-primary font-semibold group overflow-hidden">
+                                    <span class="relative z-10 group-hover:text-white">Home</span>
+                                    <span class="absolute left-0 top-0 w-0 h-full bg-primary transition-all duration-300 ease-in-out group-hover:w-full z-0 rounded"></span>
+                                </a>
                             </li>
                             <li class="group">
-                                <a href="#about" class="lg:text-lg text-md flex py-2 mx-8 text-dark font-semibold group-hover:text-brown ">Tentang Kita</a>
+                                <a href="#about" class="relative inline-block lg:text-lg text-md mx-6 py-2 px-4 text-primary font-semibold group overflow-hidden">
+                                    <span class="relative z-10 group-hover:text-white">About Nay</span>
+                                    <span class="absolute left-0 top-0 w-0 h-full bg-primary transition-all duration-300 ease-in-out group-hover:w-full z-0 rounded"></span>
+                                </a>
                             </li>
                             <li class="group">
-                                <a href="product.html" class="lg:text-lg text-md flex py-2 mx-8 text-dark font-semibold active:text-brown group-hover:text-brown">Produk</a>
-                            </li>
-                            <li class="group">
-                                <a href="#size" class="lg:text-lg text-md flex py-2 mx-8 text-dark font-semibold group-hover:text-brown">Ukuran</a>
-                            </li>
-                            <li class="group">
-                                <a href="#contact" class="lg:text-lg text-md flex py-2 mx-8 text-dark font-semibold group-hover:text-brown">Kontak</a>
+                                <a href="#galeri" class="relative inline-block lg:text-lg text-md mx-6 py-2 px-4 text-primary font-semibold group overflow-hidden">
+                                    <span class="relative z-10 group-hover:text-white">Memories</span>
+                                    <span class="absolute left-0 top-0 w-0 h-full bg-primary transition-all duration-300 ease-in-out group-hover:w-full z-0 rounded"></span>
+                                </a>
                             </li>
                         </ul>
                     </nav>
-
                 </div>
             </div>
         </div>
-    </header> 
+    </header>
+
+    <div class="tracker pointer-events-none fixed z-[9999] w-8 h-8 glow-cursor">
+        <img src="dist/img/icon1.png" alt="cursor icon" class="w-full h-full" />
+      </div>
 
     <!--Hero Section-->
     <section id="hero" class="lg:pt-28 pt-14 mb-20">
         <div class="container">
-            <div class="flex flex-wrap">
-                <div class="w-full px-4 lg:w-1/2 lg:order-last">
-                    <div class="mt-10 lg:top-0 lg:right-0">
-                        <img src="dist/img/herowallpaper.png" alt="" class="max-w-full mx-auto bghero">
-                    </div>
-                </div>
-                <div class="mt-11 w-full self-center px-4 lg:w-1/2">
-                    <h1 class="text1 text-black text-xl font-semibold mb-10 lg:mb-24 md:text-2xl lg:text-4xl tracking-widest leading-10">The Great Taste Cookie, Cake and Bakery</h1>
-                    <a href="product.html" class="text-base font-semibold text-brown py-3 px-11 rounded-full border-2 border-brown hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Pesan Sekarang</a>
-                </div>
+          <div class="flex flex-wrap">
+            <div class="w-full px-4 lg:w-1/2 lg:order-last">
+              <div class="mt-10 lg:top-0 lg:right-0">
+                <img src="dist/img/bg-heronay.png" alt="" class="max-w-full mx-auto">
+              </div>
             </div>
+            <div class="mt-11 w-full self-center px-4 lg:w-1/2">
+              <h1 class="text-black text-l font-semibold mb-10 lg:mb-24 md:text-2xl lg:text-4xl tracking-normal leading-tight text-justify">
+                Wishing the happiest birthday to my <span class="text-pink-500 text-glitter">favorite person in the world!</span> May your day be as bright and beautiful as your smile.
+              </h1>
+              <a href="#" id="openModal" class="text-base font-semibold text-primary py-3 px-11 rounded-full border-2 border-primary hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">
+                OPEN THIS!!!
+              </a>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
+
+      <!-- Modal untuk Video -->
+    <div id="videoModal" class="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50 hidden">
+        <div class="relative bg-white rounded-xl shadow-2xl w-[90%] max-w-7xl p-0 overflow-hidden flex flex-col">
+        <!-- Tombol Close -->
+        <button id="closeModal" class="absolute top-4 right-4 text-white text-3xl">&times;</button>
+        
+        <!-- Video Iframe -->
+        <div class="relative pt-[56.25%]">
+            <iframe id="videoIframe" class="absolute top-0 left-0 w-full h-full" src="https://drive.google.com/file/d/16sRUGL6YsedVevzr5b6eB-PHgbwMd9L1/preview" frameborder="0" allowfullscreen></iframe>
+        </div>
+        </div>
+    </div>
     <!--End Hero-->
 
     <!--About Section-->
@@ -77,32 +100,31 @@
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full px-4 lg:w-1/2" data-aos="fade-right" data-aos-duration="1500">
-                    <img src="dist/img/about.png">
+                    <img src="dist/img/aboutbg.png">
                 </div>
                 <div class="mt- w-full px-4 lg:w-1/2" data-aos="fade-left" data-aos-duration="1500">
-                    <h2 class="text-brown text-xl lg:text-2xl mb-5 tracking-wider">- Cerita Kita -</h2>
-                    <h1 class="text-black mb-6 font-semibold text-2xl lg:text-3xl tracking-wider">Quelita Cake</h1>
-                    <p class="text-black text-lg tracking-wider mb-4">Quelita cake and Cookies , dimulai dari kecintaan kami kepada masakan berkualitas, dan misi 
-                    kami, menemani anda, dengan hidangan berkualitas , yang memanjakan lidah, membuat kami sangat teliti dalam memilih bahan-bahan , dan proses produksi kami, sejak tahun 2005</p>
+                    <h2 class="text-primary text-xl lg:text-2xl mb-5 tracking-wider">- Tentang Nayul -</h2>
+                    <h1 class="text-black mb-6 font-semibold text-2xl lg:text-3xl tracking-wider">Nasya Ayu Putri</h1>
+                    <p class="text-black text-lg tracking-wider mb-4 text-justify">Ini namanya Nasya Ayu Putri, sekarang umur dia 22 tahun ges, Anak ke2 dari sungkowo family. Lahir di hari buruh 1 Mei, jadi setiap tahun kalo naya ultah dirayakan oleh para buruh hehe.</p>
                         
-                    <p class="text-black text-lg tracking-wider mb-4">Pengetahuan kami tentang bahan, resep dan proses produksi, menjadikan pelangan kami selalu  mempercayakan hantaran mereka untuk kerabat, handai taulan, acara-acara penting mereka, kepada kami.Pengetahuan kami tentang bahan, resep dan proses produksi, menjadikan pelangan kami selalu  mempercayakan hantaran mereka untuk kerabat, handai taulan, acara-acara penting mereka, kepada kami.</p>
+                    <p class="text-black text-lg tracking-wider mb-4 text-justify">Dia orangnya cantik, pake bangat. terus juga caring bangat ke sesama makhluh hidup lainnya, makanya care sekali ke cowonya Aji Saputra. Kesibukannya sekarang kuliah sembari kerja, yang bikin keren dia bisa ngelewatin semua rintangan walaupun sembari ngeluh dan stress setiap harinya.</p>
                         
-                    <p class="text-black text-lg tracking-wider mb-12">Juga kerinduan pelangan kepada cita rasa kue kering, snack, dan hidangan kami lainnya, menjadikan perjalanan Quelita Cake and Cookies, selalu perpegang teguh pada kepuasan pelanggan, dengan selalu menjaga kualitas produk dan delivery kami.</p>
+                    <p class="text-black text-lg tracking-wider mb-12 text-justify">Ya pokoknya orang ini cuteness overload deh, cantik, baik, dan kerja keras bangat kadang suka ngomel kalo rekan kerjanya lemot, tapi ngomelnya ke cowoknya ges wkwkwk. love you full lah buat Nasya Ayu Putri</p>
                 </div>
             </div>
         </div>
     </section>
     <!--End About-->
 
-    <!--Best Seller Section-->
+    <!--Best Seller Section
     <section id="bestseller" class="pb-20 pt-16 md:pt-14">
         <div class="container"> 
             <div class="w-full px-4">
                 <div class="mx-auto mb-5 max-w-xl text-center md:mb-16">
-                    <h2 class="text-brown text-xl lg:text-2xl mb-5 tracking-wider"> - Produk Kita - </h2>
-                    <h1 class="text-black mb-6 font-semibold text-2xl lg:text-3xl tracking-wider">Produk yang Sering Dibeli</h1>
+                    <h2 class="text-primary text-xl lg:text-2xl mb-5 tracking-wider"> - About Us - </h2>
+                    <h1 class="text-black mb-6 font-semibold text-2xl lg:text-3xl tracking-wider"></h1>
                 </div>
-            <div class="w-full px-4 justify-center">
+            <!--<div class="w-full px-4 justify-center">
                 <div class="owl-carousel owl-theme">
                     <div class="item">
                         <img src="dist/img/Green Tea 1.png" alt="">
@@ -126,126 +148,172 @@
                 </div>
             </div>
         </div>
-    </section>
-    <!--End Best Seller-->
+    </section>-->
 
-    <!--Size Variant-->
-    <section id="size" class="pt-20 pb-16 lg:pt-28 bg-white2">
+
+    <section id="aboutus" class="pb-20 pt-16 md:pt-14">
         <div class="container">
-            <div class="w-full text-center px-4">
-                <h2 class="text-brown text-xl lg:text-2xl mb-6 tracking-wider"> - Ukuran - </h2>
-                <h1 class="text-black mb-12 font-semibold text-2xl lg:text-3xl tracking-wider">Jenis - Jenis Toples Kemasan</h1>
+          <div class="w-full px-4">
+            <div class="mx-auto mb-5 max-w-xl text-center md:mb-16">
+              <h2 class="text-primary text-xl lg:text-2xl mb-5 tracking-wider">- About Us -</h2>
             </div>
-            <div class="w-full flex px-4 justify-center">
-                <img src="dist/img/size_variant.png" alt="">
+      
+            <!-- Wrapper Flex untuk semua kolom -->
+            <div class="flex flex-wrap -mx-4 text-center">
+              <!-- Kolom 1 -->
+              <div class="w-full px-4 mb-10 lg:w-1/4">
+                <h3 class="text-lg font-bold text-primary mb-2">Where We Met</h3>
+                <p class="text-gray-700 mb-4">Pertama ketemu sih di <span class="font-semibold">Kopi Lojik</span></p>
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2400588562386!2d106.85239607499048!3d-6.232051993756104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f352bf3b502b%3A0xb9a04a70cc23d536!2sKOPILOJIK!5e0!3m2!1sid!2sid!4v1744634448968!5m2!1sid!2sid" 
+                  width="100%" 
+                  height="180" 
+                  style="border:0; border-radius: 0.5rem;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+      
+              <!-- Kolom 2 -->
+              <div class="w-full px-4 mb-10 lg:w-1/4">
+                <h3 class="text-lg font-bold text-primary mb-5 text-center">How Long Together</h3>
+              
+                <div class="flex justify-center gap-x-6 text-black text-center">
+                  <div class="p-4 w-20 mx-1">
+                    <p class="text-xl font-medium text-gray-500 mb-1">Year</p>
+                    <p id="years" class="text-lg font-bold"></p>
+                  </div>
+                  <div class="p-4 w-20 mx-1">
+                    <p class="text-xl font-medium text-gray-500 mb-1">Month</p>
+                    <p id="months" class="text-lg font-bold"></p>
+                  </div>
+                  <div class="p-4 w-20 mx-1">
+                    <p class="text-xl font-medium text-gray-500 mb-1">Day</p>
+                    <p id="days" class="text-lg font-bold"></p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Kolom 3 -->
+              <div class="w-full px-4 mb-10 lg:w-1/4">
+                <h3 class="text-lg font-bold text-primary mb-10">Birthday Timee!!!!</h3>
+                <p id="countdown" class="text-xl font-semibold text-gray-700"></p>
+              </div>
+      
+              <!-- Kolom 4 -->
+              <div class="w-full px-4 mb-10 lg:w-1/4">
+                <h3 class="text-lg font-bold text-primary mb-2">Our Favorite Song</h3>
+                <div class="flex justify-center">
+                  <!-- Spotify Embed -->
+                  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1Q7EgiMOuwDcB0PJC6AzON?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+              </div>
             </div>
-            <p class="text-center text-lg mt-11 lg:tracking-wider">*note: Untuk toples kemasan kaca bentuk tidak selalu sama dengan foto tergantung <br> dengan ketersediaan stok kita </p>
+          </div>
+        </div>
+      </section>
+
+    <!--galeri-->
+    <section id="galeri" class="pt-20 pb-16 lg:pt-28 bg-white2">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="mx-auto mb-2 max-w-xl text-center md:mb-10">
+                  <h2 class="shiny-text text-xl lg:text-2xl mb-5 tracking-wider">- Our Moments -</h2>
+                </div>
+              </div>
+            <div class="grid gap-4">
+                <!-- Gambar besar, akan diganti dengan gambar kecil yang dipilih -->
+                <div id="featured-image" class="pb-10 flex items-center justify-center bg-gray-100 rounded-lg overflow-hidden" style="height: 800px;">
+                    <img class="max-w-full max-h-full object-contain" 
+                         src="dist/img/nay2.jpg" 
+                         alt="" 
+                         id="main-image">
+                </div>
+    
+                <!-- Galeri gambar kecil yang bisa dipilih -->
+                <div class="grid grid-cols-5 gap-4" id="image-gallery">
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg cursor-pointer" src="dist/img/nay1.jpg" alt="" onclick="changeImage(this)">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg cursor-pointer" src="dist/img/nay2.jpg" alt="" onclick="changeImage(this)">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg cursor-pointer" src="dist/img/nay3.jpg" alt="" onclick="changeImage(this)">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg cursor-pointer" src="dist/img/nay4.jpg" alt="" onclick="changeImage(this)">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg cursor-pointer" src="dist/img/nay5.jpg" alt="" onclick="changeImage(this)">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg cursor-pointer" src="dist/img/nay6.jpg" alt="" onclick="changeImage(this)">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg cursor-pointer" src="dist/img/nay7.jpg" alt="" onclick="changeImage(this)">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg cursor-pointer" src="dist/img/nay8.jpg" alt="" onclick="changeImage(this)">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg cursor-pointer" src="dist/img/nay9.jpg" alt="" onclick="changeImage(this)">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg cursor-pointer" src="dist/img/nay10.jpg" alt="" onclick="changeImage(this)">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <!---->
 
-    <!--Pembayaran Section-->
-    <section id="payment" class="pt-20 pb-16">
+    <!--message Section-->
+    <section id="message" class="pt-20 pb-16">
         <div class="container">
-            <div class="flex flex-wrap">
-                <div class="w-full px-4">
-                    <div class="mx-auto mb-5 max-w-xl text-center md:mb-16">
-                        <h2 class="text-brown text-xl lg:text-2xl mb-5 tracking-wider"> - Cara Pemesanan - </h2>
-                        <h1 class="text-black mb-6 font-semibold text-2xl lg:text-3xl tracking-wider">Langkah Melakukan Pemesanan</h1>
-                    </div>
-                </div>
-                <div class="mx-auto w-full px-11 md:w-2/4 lg:w-1/4">
-                    <img src="dist/img/Call.png" alt="" data-aos="fade-up" data-aos-duration="2000">
-                    <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
-                        <h2 class="mt-4 mb-4 text-center text-xl font-medium">1. Hubungi Kami</h2>
-                        <p class="mb-7 font-medium text-xl tracking-wide ">Anda dapat memesan produk kita melalui Whatsapp atau Email yang tertera dalam website ini </p>
-                    </div>
-                </div>
-                <div class="mx-auto w-full px-11 md:w-2/4 lg:w-1/4">
-                    <img src="dist/img/pembayaran.png" alt="" data-aos="fade-up" data-aos-duration="2000">
-                    <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
-                        <h2 class="mt-4 mb-4 text-center text-xl font-medium">2. Pembayaran</h2>
-                        <p class="mb-7 font-medium text-lg tracking-wide ">Pembayaran dapat dilakukan via transfer ke rekening Quelita Cake</p>
-                    </div>
-                </div>
-                <div class="mx-auto w-full px-11 md:w-2/4 lg:w-1/4">
-                    <img src="dist/img/preorder.png" alt="" data-aos="fade-up" data-aos-duration="2000">
-                    <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
-                        <h2 class="mt-4 mb-4 text-center text-xl font-medium">3. Pre - Order</h2>
-                        <p class="mb-7 font-medium text-lg tracking-wide ">Setelah melakukan pembayaran, pesanan kamu akan masuk ke list Pre- Order dan akan dikirimkan sekitar 2-3 hari</p>
-                    </div>
-                </div>
-                <div class="mx-auto w-full px-11 md:w-2/4 lg:w-1/4">
-                    <img src="dist/img/pengiriman.png" alt="" data-aos="fade-up" data-aos-duration="2000">
-                    <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
-                        <h2 class="mt-4 mb-4 text-center text-xl font-medium">4. Pengiriman</h2>
-                        <p class="mb-7 font-medium text-lg tracking-wide ">Pengiriman pesanan kita lakukan setiap hari dengan Gojek/Grab</p>
-                    </div>
-                </div>
+          <div class="flex flex-wrap justify-center">
+            <div class="w-full px-4 text-center">
+              <div class="mx-auto mb-5 max-w-xl md:mb-16">
+                <h2 class="text-primary text-xl lg:text-2xl mb-5 tracking-wider"> - Surat untuk Naya - </h2>
+      
+                <!-- Icon Surat -->
+                <button id="openMessage" class="hover:scale-110 transition-transform duration-300">
+                    <img src="dist/img/svgmessage.svg" alt="Message Icon" class="w-16 h-16 text-primary hover:text-pink-600"/>
+                  </button>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
+      
+        <!-- Modal Pesan Ulang Tahun -->
+        <div id="messageModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+            <div class="bg-white rounded-lg shadow-lg p-6 max-w-lg w-full relative">
+              <button id="close-message" class="absolute top-2 right-2 text-gray-500 hover:text-red-500 text-2xl">&times;</button>
+              <h3 class="text-xl font-semibold text-primary mb-4 text-center">Pesan untuk Naya 🎂</h3>
+              <p class="text-gray-700 leading-relaxed text-center">
+                Happy Birthday ya buy, alhamdulillah udah 22 tahun. Keren loh bisa sejauh ini dengan banyak struggle yang udah kamu lewatin walaupun ngeluh capek, stress dan lain sebagainya tapi bisa kan pada akhirnya hehe. Aku bakalan jadi big support buat kamu sayang apapun yang kamu lakuin dan selama itu baik buat kamu, jangan takut yang ngelakuin banyak hal dan keluar zona nyaman.
+                Harapan aku banyak lagi buat kamu wkwkwkw, semoga sehat terus biar bisa banyak yang dapat dilakuin bareng aku, semoga di jauhkan dari orang orang yang menyebalkan, terus juga kuliahnya lancar lancar yaa, kalo butuh apa apa bilang aja nanti aku bantuin kalo aku udah free sama kerjaan aku ekekek. Terus juga semoga dapet kerjaan yang lebih proper nanti yaa, jangan takut nyoba yang baru sayang gapapa mulai lagi dari 0. Yaa pokoknyaa semoga semua jadi lebih baik yaa buat tahun tahun kedepannya
+                Pokoknya aku bangga sama kamu sayang udah sejauh ini sampe titik ini dengan banyak perjuangan yang kamu udah lewatin, paung juga pasti bangga bangat sama kamu pastinya!!!
+              </p>
+              <br>
+              <p class="text-gray-700 leading-relaxed text-center">
+                Happy Birthday yaaa sekaliii lagii 💖✨🎉🥳
+              </p>
+            </div>
+          </div>
+      </section>
     <!--End-->
       
     <!--End-->
-    <!--End-->
 
-    <!--Order Now Section-->
-    <section id="ordernow" class="pt-16 pb-16">
-        <div class="bg-cover bg-fixed bg-no-repeat bg-center" style="background-image: url(dist/img/bg-order.png);">
-            <h1 class="text-center text-black pt-8 font-semibold text-2xl lg:text-3xl tracking-wider">Ayo Tunggu Apalagi??!!</h1>
-            <p class="px-4 lg:px-80 pt-6 pb-6 text-center">Gausah nunggu lama lama, nanti kehabisan nyesal loh</p>
-            <div class="items-center flex justify-center pb-10">
-                <a href="product.html" class="text-base font-semibold text-brown py-3 px-11 rounded-full border-2 border-brown hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Yuk Pesan Sekarang</a>
-            </div>
-        </div>
-    </section>
-
-
-    <footer id="contact" class="p-4 bg-white sm:p-6">
-        <div class="container">
-            <div class="md:flex">
-                <div class="mb-6 md:mb-0">
-                    <a href="" class="flex items-center">
-                        <img src="dist/img/logo.png" class="mr-3 h-8" alt="Quelita" />
-                        <span class="self-center text-2xl font-semibold text-brown">Quelita Cake</span>
-                    
-                    </a>
-                </div>
-                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 md:mx-auto">
-                    <div>
-                        <h2 class="mb-6 text-sm font-semibold text-black uppercase">Link</h2>
-                        <ul class="text-black">
-                            <li class="mb-4">
-                                <a href="#hero" class="hover:underline">Home</a>
-                            </li>
-                            <li class="mb-4">
-                                <a href="#about" class="hover:underline">Tentang Kita</a>
-                            </li>
-                            <li class="mb-4">
-                                <a href="#bestseller" class="hover:underline">Produk</a>
-                            </li>
-                            <li class="mb-4">
-                                <a href="#size" class="hover:underline">Ukuran Kemasan</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="mx-8">
-                        <h2 class="mb-6 text-sm font-semibold uppercase text-black">Kontak Kita</h2>
-                        <ul class="text-black">
-                            <li class="mb-4">
-                                <a href="https://www.instagram.com/quelita_cake/" target="_blank" class="hover:underline ">Instagram</a>
-                            </li>
-                            <li class="mb-4">
-                                <a href="mailto:desalinashop@gmail.com" target="_blank" class="hover:underline ">Email</a>
-                            </li>
-                            <li class="mb-4">
-                                <a href="https://wa.me/08161868767" target="_blank" class="hover:underline ">Whatsapp</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <footer id="contact" class="p-4 bg-white2 sm:p-6">
+        <div class="container mx-auto">
+            <a href="" class="items-center">
+                <p class="text-center text-2xl font-semibold text-primary">
+                    <span class="shiny-text">made from scratch and love by aji to nay</span> 
+                    <span class="emoji">💖✨</span>
+                </p>
+            </a>
         </div>
     </footer>
     
@@ -253,40 +321,10 @@
     <script src="dist/js/script.js"></script>
         <!-- Owl Carousel -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script type="text/javascript">
-            $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:30,
-        nav:true,
-        autoplay:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:2
-            },
-            800:{
-                items:3
-            }
-        }
-    })
         </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 
     <!--GSAP-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
-    <script>
-        gsap.from('.text1', { duration: 2, x: '-200', opacity: 0, delay: 0.5});
-        gsap.from('.text2', { duration: 1.5, x: '50', opacity: 0, delay: 1});
-        gsap.from('.desc', { duration: 1.5, x: '-50', opacity: 0, delay: 1.5});
-        gsap.from('.socmed1', { duration: 1.5, y: '50', opacity: 0, delay: 1});
-        gsap.from('.socmed2', { duration: 1.5, y: '-50', opacity: 0, delay: 1});
-        gsap.from('.socmed3', { duration: 1.5, y: '50', opacity: 0, delay: 1});
-        gsap.from('.socmed4', { duration: 1.5, y: '-50', opacity: 0, delay: 1});
-        gsap.from('.bghero', { duration: 2.5, x: '200', opacity: 0, delay: 1});
-      </script>
 
     <!--AOS-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
